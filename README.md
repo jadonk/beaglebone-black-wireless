@@ -8,6 +8,6 @@ THERE IS NO WARRANTY FOR THE DESIGN MATERIALS, TO THE EXTENT PERMITTED BY APPLIC
 
 We mean it, these design materials may be totally unsuitable for any purposes.
 
-Do not use the BeagleBoard.org logo on your products without a [https://beagleboard.org/logo](logo) license, but feel free to reference BeagleBoard.org.
+Do not use the BeagleBoard.org logo on your products without a [logo](https://beagleboard.org/logo) license, but feel free to reference BeagleBoard.org.
 
 See the LICENSE file regarding the copyright of these materials.
