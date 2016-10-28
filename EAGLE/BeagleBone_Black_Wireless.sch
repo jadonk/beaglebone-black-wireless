@@ -10824,23 +10824,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <smd name="P$1" x="0" y="0" dx="1.016" dy="1.016" layer="1" roundness="100"/>
 <circle x="0" y="0" radius="1.04726875" width="0.127" layer="41"/>
 </package>
-<package name="PJ-102B_POWER_CON">
-<wire x1="-6" y1="4.7" x2="-6" y2="-4.7" width="0.127" layer="21"/>
-<wire x1="7.7" y1="4.7" x2="7.7" y2="-4.7" width="0.127" layer="21"/>
-<wire x1="7.7" y1="4.7" x2="-6" y2="4.7" width="0.127" layer="21"/>
-<wire x1="-6" y1="-4.7" x2="7.7" y2="-4.7" width="0.127" layer="21"/>
-<pad name="IN" x="-6" y="0" drill="1.6" shape="long" rot="R90"/>
-<pad name="OUT" x="0" y="0" drill="1.6" shape="long" rot="R90"/>
-<pad name="OUT_CON" x="-3" y="4.7" drill="1.6" shape="long" rot="R180"/>
-<text x="1" y="6" size="1.27" layer="25">&gt;NAME</text>
-<text x="1" y="-7" size="1.27" layer="27">&gt;VALUE</text>
-<hole x="0" y="-1.0414" drill="0.762"/>
-<hole x="0.0254" y="0.9652" drill="0.762"/>
-<hole x="-5.9944" y="0.9652" drill="0.762"/>
-<hole x="-5.969" y="-1.0668" drill="0.762"/>
-<hole x="-1.9304" y="4.6736" drill="0.762"/>
-<hole x="-3.937" y="4.6736" drill="0.762"/>
-</package>
 <package name="SOT23-5">
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
 <wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -10883,19 +10866,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.254" layer="94"/>
 <pin name="P$1" x="0" y="0" visible="off" length="point" direction="nc"/>
 </symbol>
-<symbol name="POWER_CON">
-<wire x1="-7.366" y1="0" x2="-0.508" y2="0" width="1.016" layer="94"/>
-<wire x1="0" y1="-2.54" x2="-3.556" y2="-2.54" width="0.254" layer="94"/>
-<wire x1="-3.556" y1="-2.54" x2="-3.556" y2="-4.572" width="0.254" layer="94"/>
-<wire x1="-3.556" y1="-4.572" x2="-3.048" y2="-4.064" width="0.254" layer="94"/>
-<wire x1="-3.556" y1="-4.572" x2="-4.064" y2="-4.064" width="0.254" layer="94"/>
-<wire x1="0" y1="-5.08" x2="-5.334" y2="-5.08" width="0.254" layer="94"/>
-<wire x1="-5.334" y1="-5.08" x2="-5.842" y2="-4.572" width="0.254" layer="94"/>
-<wire x1="-5.842" y1="-4.572" x2="-6.35" y2="-5.08" width="0.254" layer="94"/>
-<pin name="IN" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
-<pin name="OUT_CON" x="5.08" y="-2.54" visible="off" length="middle" rot="R180"/>
-<pin name="OUT" x="5.08" y="-5.08" visible="off" length="middle" rot="R180"/>
-</symbol>
 <symbol name="5PIN_REG">
 <wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
 <wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
@@ -10930,23 +10900,6 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <device name="" package="FIDUCIAL_40MIL">
 <connects>
 <connect gate="G$1" pin="P$1" pad="P$1"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="PJ-102B_POWER_CON" prefix="X">
-<gates>
-<gate name="G$1" symbol="POWER_CON" x="2.54" y="0"/>
-</gates>
-<devices>
-<device name="" package="PJ-102B_POWER_CON">
-<connects>
-<connect gate="G$1" pin="IN" pad="IN"/>
-<connect gate="G$1" pin="OUT" pad="OUT"/>
-<connect gate="G$1" pin="OUT_CON" pad="OUT_CON"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -15815,6 +15768,38 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <text x="-3.75" y="3.55" size="1.016" layer="25" ratio="12">&gt;NAME</text>
 <text x="6.2" y="-1.45" size="1.016" layer="27" ratio="12" rot="R90">&gt;VALUE</text>
 </package>
+<package name="PJ-102B_POWER_CON">
+<wire x1="-6" y1="4.7" x2="-6" y2="-4.7" width="0.127" layer="51"/>
+<wire x1="7.7" y1="4.7" x2="7.7" y2="-4.7" width="0.127" layer="51"/>
+<wire x1="7.7" y1="4.7" x2="-6" y2="4.7" width="0.127" layer="51"/>
+<wire x1="-6" y1="-4.7" x2="7.7" y2="-4.7" width="0.127" layer="51"/>
+<pad name="IN" x="-6" y="0" drill="1.6" shape="long" rot="R90"/>
+<pad name="OUT" x="0" y="0" drill="1.6" shape="long" rot="R90"/>
+<pad name="OUT_CON" x="-3" y="4.7" drill="1.6" shape="long" rot="R180"/>
+<text x="1.07" y="5.1" size="1.016" layer="25" ratio="12">&gt;NAME</text>
+<text x="0.58" y="-5.98" size="1.016" layer="27" ratio="12">&gt;VALUE</text>
+<wire x1="-0.381" y1="1.016" x2="0.381" y2="1.016" width="0" layer="20" curve="-180"/>
+<wire x1="0.381" y1="1.016" x2="0.381" y2="-1.016" width="0" layer="20"/>
+<wire x1="-0.381" y1="-1.016" x2="-0.381" y2="1.016" width="0" layer="20"/>
+<wire x1="-0.381" y1="-1.016" x2="0.381" y2="-1.016" width="0" layer="20" curve="180"/>
+<wire x1="-6.381" y1="1.27" x2="-5.619" y2="1.27" width="0" layer="20" curve="-180"/>
+<wire x1="-5.619" y1="1.27" x2="-5.619" y2="-1.27" width="0" layer="20"/>
+<wire x1="-6.381" y1="-1.27" x2="-6.381" y2="1.27" width="0" layer="20"/>
+<wire x1="-6.381" y1="-1.27" x2="-5.619" y2="-1.27" width="0" layer="20" curve="180"/>
+<wire x1="-4.016" y1="4.319" x2="-4.016" y2="5.081" width="0" layer="20" curve="-180"/>
+<wire x1="-4.016" y1="5.081" x2="-1.984" y2="5.081" width="0" layer="20"/>
+<wire x1="-1.984" y1="4.319" x2="-4.016" y2="4.319" width="0" layer="20"/>
+<wire x1="-1.984" y1="4.319" x2="-1.984" y2="5.081" width="0" layer="20" curve="180"/>
+<wire x1="-5.57" y1="4.7" x2="-6" y2="4.7" width="0.127" layer="21"/>
+<wire x1="-6" y1="4.7" x2="-6" y2="2.57" width="0.127" layer="21"/>
+<wire x1="-0.42" y1="4.7" x2="7.7" y2="4.7" width="0.127" layer="21"/>
+<wire x1="7.7" y1="4.7" x2="7.7" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="7.7" y1="-4.7" x2="-6" y2="-4.7" width="0.127" layer="21"/>
+<wire x1="-6" y1="-4.7" x2="-6" y2="-2.57" width="0.127" layer="21"/>
+<text x="-6" y="0" size="0.254" layer="21" rot="SR90" align="center">Plated Slot</text>
+<text x="0" y="0" size="0.254" layer="21" rot="SR270" align="center">Plated Slot</text>
+<text x="-3" y="4.7" size="0.254" layer="21" rot="SR0" align="center">Plated Slot</text>
+</package>
 </packages>
 <symbols>
 <symbol name="HDMI-TYPE-D">
@@ -15927,6 +15912,21 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <text x="-2.54" y="5.08" size="1.016" layer="95" ratio="12">&gt;NAME</text>
 <text x="-2.54" y="-6.096" size="1.016" layer="96" ratio="12">&gt;VALUE</text>
 </symbol>
+<symbol name="POWER_CON">
+<wire x1="-7.366" y1="0" x2="-0.508" y2="0" width="1.016" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-3.556" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-2.54" x2="-3.556" y2="-4.572" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-4.572" x2="-3.048" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="-3.556" y1="-4.572" x2="-4.064" y2="-4.064" width="0.254" layer="94"/>
+<wire x1="0" y1="-5.08" x2="-5.334" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-5.334" y1="-5.08" x2="-5.842" y2="-4.572" width="0.254" layer="94"/>
+<wire x1="-5.842" y1="-4.572" x2="-6.35" y2="-5.08" width="0.254" layer="94"/>
+<pin name="IN" x="5.08" y="0" visible="off" length="middle" rot="R180"/>
+<pin name="OUT_CON" x="5.08" y="-2.54" visible="off" length="middle" rot="R180"/>
+<pin name="OUT" x="5.08" y="-5.08" visible="off" length="middle" rot="R180"/>
+<text x="-7.62" y="1.27" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-6.858" size="1.27" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SCHA5B0200(ALPS_USD)" prefix="X" uservalue="yes">
@@ -16032,6 +16032,23 @@ Source: http://focus.ti.com/lit/ds/slcs146e/slcs146e.pdf</description>
 <connect gate="G$1" pin="SGND5" pad="CGND5"/>
 <connect gate="G$1" pin="SGND6" pad="CGND6"/>
 <connect gate="G$1" pin="VBUS" pad="VBUS"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PJ-102B_POWER_CON" prefix="X" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="POWER_CON" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="PJ-102B_POWER_CON">
+<connects>
+<connect gate="G$1" pin="IN" pad="IN"/>
+<connect gate="G$1" pin="OUT" pad="OUT"/>
+<connect gate="G$1" pin="OUT_CON" pad="OUT_CON"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -17322,15 +17339,15 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="R19" library="rcl" deviceset="R-US_" device="R0402" value="10k, 1%"/>
 <part name="GND6" library="supply1" deviceset="GND" device=""/>
 <part name="IC5" library="texas" deviceset="LM4041*I" device="DBZ" technology="D" value="TLVH431 (SOT-23-3)"/>
-<part name="IC6" library="texas" deviceset="LM4041*I" device="DBZ" technology="D" value="TLVH431 (SOT-23-3)"/>
+<part name="IC6" library="texas" deviceset="LM4041*I" device="DBZ" technology="D" value="DNP TLVH431 (SOT-23-3)"/>
 <part name="SUPPLY33" library="GHI-PowerGoundSupply" deviceset="VDD_3V3A" device=""/>
 <part name="SUPPLY34" library="GHI-PowerGoundSupply" deviceset="VDD_1V8" device=""/>
 <part name="SUPPLY38" library="GHI-PowerGoundSupply" deviceset="VDD_3V3B" device=""/>
 <part name="R44" library="rcl" deviceset="R-US_" device="R0402" value="499"/>
-<part name="R48" library="rcl" deviceset="R-US_" device="R0402" value="499"/>
+<part name="R48" library="rcl" deviceset="R-US_" device="R0402" value="DNP 499"/>
 <part name="R46" library="rcl" deviceset="R-US_" device="R0402" value="10k 1%"/>
-<part name="R50" library="rcl" deviceset="R-US_" device="R0402" value="10k 1%"/>
-<part name="R51" library="rcl" deviceset="R-US_" device="R0402" value="40.2k 1%"/>
+<part name="R50" library="rcl" deviceset="R-US_" device="R0402" value="DNP 10k 1%"/>
+<part name="R51" library="rcl" deviceset="R-US_" device="R0402" value="DNP 40.2k 1%"/>
 <part name="R47" library="rcl" deviceset="R-US_" device="R0402" value="40.2k 1%"/>
 <part name="R45" library="rcl" deviceset="R-US_" device="R0402" value="DNP"/>
 <part name="R49" library="rcl" deviceset="R-US_" device="R0402" value="DNP"/>
@@ -17346,9 +17363,8 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="SUPPLY23" library="GHI-PowerGoundSupply" deviceset="VDD_3V3B" device=""/>
 <part name="SUPPLY2" library="GHI-PowerGoundSupply" deviceset="VDD_3V3B" device=""/>
 <part name="T1" library="transistor-pnp" deviceset="MMBT2907*" device="SMD" technology="ALT1" value="MMBT2907"/>
-<part name="T2" library="transistor-pnp" deviceset="MMBT2907*" device="SMD" technology="ALT1" value="MMBT2907"/>
+<part name="T2" library="transistor-pnp" deviceset="MMBT2907*" device="SMD" technology="ALT1" value="DNP MMBT2907"/>
 <part name="GND68" library="supply1" deviceset="GND" device=""/>
-<part name="X12" library="GHI" deviceset="PJ-102B_POWER_CON" device=""/>
 <part name="GND33" library="supply1" deviceset="GND" device=""/>
 <part name="FUD4" library="GHI" deviceset="FIDUCIAL" device=""/>
 <part name="FUD5" library="GHI" deviceset="FIDUCIAL" device=""/>
@@ -17638,7 +17654,8 @@ Source: Fairchild .. BAT54.pdf</description>
 <part name="C11" library="rcl" deviceset="CPOL-US" device="CT3528" value="47uF DNP"/>
 <part name="GND5" library="supply1" deviceset="GND" device=""/>
 <part name="C23" library="rcl" deviceset="CPOL-US" device="CT3528" value="47uF DNP"/>
-<part name="R56" library="rcl" deviceset="R-US_" device="R0402" value="1M, 1%"/>
+<part name="R56" library="rcl" deviceset="R-US_" device="R0402" value="DNP 1M, 1%"/>
+<part name="X12" library="GHI-Connectors" deviceset="PJ-102B_POWER_CON" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -21479,7 +21496,6 @@ of the large aluminum cap</text>
 <attribute name="VALUE" x="784.86" y="439.42" size="1.778" layer="96" rot="MR0"/>
 </instance>
 <instance part="GND68" gate="1" x="604.52" y="548.64"/>
-<instance part="X12" gate="G$1" x="596.9" y="558.8"/>
 <instance part="GND33" gate="1" x="807.72" y="83.82"/>
 <instance part="FUD4" gate="G$1" x="787.4" y="48.26"/>
 <instance part="FUD5" gate="G$1" x="800.1" y="48.26"/>
@@ -21920,6 +21936,7 @@ of the large aluminum cap</text>
 <attribute name="VALUE" x="224.536" y="348.869" size="1.778" layer="96"/>
 </instance>
 <instance part="R56" gate="G$1" x="43.18" y="518.16" rot="R90"/>
+<instance part="X12" gate="G$1" x="596.9" y="558.8"/>
 </instances>
 <busses>
 </busses>
@@ -22527,11 +22544,11 @@ of the large aluminum cap</text>
 <segment>
 <pinref part="GND68" gate="1" pin="GND"/>
 <wire x1="604.52" y1="551.18" x2="604.52" y2="553.72" width="0.1524" layer="91"/>
-<pinref part="X12" gate="G$1" pin="OUT"/>
-<wire x1="604.52" y1="553.72" x2="601.98" y2="553.72" width="0.1524" layer="91"/>
 <pinref part="R17" gate="G$1" pin="1"/>
 <wire x1="607.06" y1="553.72" x2="604.52" y2="553.72" width="0.1524" layer="91"/>
 <junction x="604.52" y="553.72"/>
+<pinref part="X12" gate="G$1" pin="OUT"/>
+<wire x1="604.52" y1="553.72" x2="601.98" y2="553.72" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND33" gate="1" pin="GND"/>
@@ -24640,8 +24657,8 @@ of the large aluminum cap</text>
 <wire x1="637.54" y1="558.8" x2="637.54" y2="561.34" width="0.1524" layer="91"/>
 <wire x1="637.54" y1="558.8" x2="640.08" y2="558.8" width="0.1524" layer="91"/>
 <junction x="637.54" y="558.8"/>
-<pinref part="X12" gate="G$1" pin="IN"/>
 <wire x1="601.98" y1="558.8" x2="637.54" y2="558.8" width="0.1524" layer="91"/>
+<pinref part="X12" gate="G$1" pin="IN"/>
 </segment>
 <segment>
 <pinref part="P9" gate="G$1" pin="5"/>
