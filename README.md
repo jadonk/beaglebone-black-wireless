@@ -1,7 +1,7 @@
 # BeagleBoard.org BeagleBone Black Wireless
 WiFi/BT version of BeagleBone Black done in EAGLE
 
-![](OSHW_mark_US000011.png)
+![](OSHW_mark_US000011.png | width=20)
 
 # Terms
 These design materials are *NOT SUPPORTED* and *DO NOT* constitute a reference design. Only “community” support is allowed via resources at [BeagleBoard.org/discuss](https://beagleboard.org/discuss).
